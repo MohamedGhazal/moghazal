@@ -1,10 +1,42 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+li.logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    opacity: 85%;
+    border-bottom: 3px;
+    text-align:start;
+    
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    list-style-type: none;
+    align-items: end;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
 .banner {
-    background-color: beige;
-    color: rgba(235, 175, 116, 0.857);
-    text-align: left;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
     
 }
 #sly-guy {
-    height: auto;
-    
+    visibility: hidden;
 }
