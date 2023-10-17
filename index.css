@@ -1,24 +1,25 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    text-decoration: none;
 }
 
-li.logo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
-    opacity: 85%;
+    opacity: 90%;
     text-align:start;
     font-size: larger;
     border-bottom-color: rgba(152, 152, 152, 0.788);
     border-bottom-style:solid;
     border-width: 1px;
     padding-bottom: 10px;
-    background-blend-mode: hue;
+    backdrop-filter: blur(20%);
+    margin-top: 0;
+
+
 }
 
 .navbar li{
@@ -26,11 +27,14 @@ li.logo{
     padding: 0px 20px;
     list-style-type: none;
     align-items: end;
+    padding: 10px;
 
+}
+#navbarSpacer li{
+    padding-right: 100%;
 }
 
 .navbar a{
-    text-decoration: none;
     color: black;
 }
 
@@ -38,9 +42,27 @@ li.logo{
     background-color: white;
     color: black;
     text-align: center;
-    padding-top: 40px;
-    background-image:element("resources/sly-fox.jpg")
+    margin-top: 100px;
+    display: flex;
 }
+
+banner.h2 {
+    color: white;
+}
+
+.about{
+    text-align: start;
+    margin: 30px;
+    border-top: 1px solid gray
+}
+
 #sly-guy {
-    visibility: hidden;
+    visibility: true;
+}
+
+a.logo{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    
 }
