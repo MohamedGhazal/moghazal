@@ -16,8 +16,9 @@
     border-bottom-style:solid;
     border-width: 1px;
     padding-bottom: 10px;
-    backdrop-filter: blur(20%);
+    backdrop-filter: blur(50%);
     margin-top: 0;
+    display: flex;
 
 
 }
@@ -31,7 +32,7 @@
 
 }
 #navbarSpacer li{
-    padding-right: 100%;
+    flex-grow: 100%;
 }
 
 .navbar a{
@@ -43,7 +44,6 @@
     color: black;
     text-align: center;
     margin-top: 100px;
-    display: flex;
 }
 
 banner.h2 {
@@ -52,12 +52,22 @@ banner.h2 {
 
 .about{
     text-align: start;
-    margin: 30px;
-    border-top: 1px solid gray
+    border-top: 1px solid gray;
+    display: flex;
+}
+
+.aboutMeText{
+    padding: 25px;
 }
 
 #sly-guy {
     visibility: true;
+}
+#aboutMePic{
+    visibility:true;
+    object-fit: contain;
+    width: 100%
+
 }
 
 a.logo{
