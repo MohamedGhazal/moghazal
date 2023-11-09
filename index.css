@@ -4,6 +4,7 @@
 }
 html, body{
     background-color: rgb(20, 20, 20);
+    margin: 0px;
 }
 
 .navbar {
@@ -20,7 +21,7 @@ html, body{
     margin-right: 5%;
     background: rgba(0,0, 0, 80%);
     align-items: baseline;
-
+    z-index: 2;
 }
 
 
@@ -51,14 +52,16 @@ html, body{
 
 .banner {
     text-align: center;
-    margin-top: 100px;
+    margin: 100px 30px 100px 30px;
     color: white;
     display: flex;
+    align-items: center ;
 
 }
 
 .banner-text{
-    justify-self: center center;
+    justify-self: center;
+    flex-grow: 1;
         
 }
 
@@ -67,31 +70,46 @@ banner-text.h2 {
     font-weight: 300;
 }
 
+.bannerSpacer{
+    flex-grow: 0.5;
+    max-width: 25%;
+}
+.profilePic{
+    flex-grow: 0.5;
+    flex-basis: 0.3;
+    max-width: 25%;
+    justify-self: center;
+}
+
 .about{
     text-align: start;
     display: flex;
     gap: 0;
-    max-width: 102%;
+    max-width: 100%;
 }
 
 .aboutMeText{
     padding: 25px;
-    min-width: 50%;
     color: white;
+    min-width: 50%;
+}
+
+.aboutMePic{
+    padding-right: 0px;
+}
+
+#aboutMePic{
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
 }
 
 #sly-guy {
-    visibility:hidden;
-    object-fit: contain;
-
+    visibility:visible;
+    object-fit: contain ;
     border-radius: 100%;
-    
-}
-.aboutMePic{
-    min-width: 50%;
-    height: 40px;
-}
-#aboutMePic{
-    justify-self: center;
-    object-fit: cover;
+    max-width: 100%;
+    margin: 20px;
+    border: 2px solid  white;
 }
