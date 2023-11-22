@@ -21,7 +21,7 @@ html, body{
     margin-right: 5%;
     background: rgba(0,0, 0, 80%);
     align-items: baseline;
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -30,7 +30,6 @@ html, body{
     padding: 20px;
     font-size: large;
     font-weight: 300;
-
 }
 .logo{
     color: rgb(255, 255, 255);
@@ -51,47 +50,61 @@ html, body{
 }
 
 .banner {
-    text-align: center;
-    margin: 100px 30px 100px 30px;
-    color: white;
-    display: flex;
-    align-items: center ;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+    justify-content: space-evenly;
+    
 
+
+    background-image: url("resources/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
 }
 
 .banner-text{
-    justify-self: center;
-    flex-grow: 1;
-        
+    grid-area: 2 / 2 / 2 / 4;
+    color: white;
+    text-align: center;
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
 }
 
-banner-text.h2 {
-    color: white;
+.banner-text h1 {
+    font-size: 3rem;
     font-weight: 300;
 }
 
-.bannerSpacer{
-    flex-grow: 0.5;
-    max-width: 25%;
+.banner-text h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
 }
+
 .profilePic{
-    flex-grow: 0.5;
-    flex-basis: 0.3;
-    max-width: 25%;
-    justify-self: center;
+    grid-area: 2 / 1 ;
 }
 
 .about{
     text-align: start;
     display: flex;
-    gap: 0;
-    max-width: 100%;
 }
 
 .aboutMeText{
-    padding: 25px;
+    margin: 50px;
     color: white;
     min-width: 50%;
+}
+
+.aboutMeText h2{
+    font-weight: 300;
+}
+.aboutMeText p{
+    font-weight: 200;
 }
 
 .aboutMePic{
@@ -106,10 +119,11 @@ banner-text.h2 {
 }
 
 #sly-guy {
-    visibility:visible;
     object-fit: contain ;
     border-radius: 100%;
-    max-width: 100%;
-    margin: 20px;
     border: 2px solid  white;
+    margin: 30px;
+    max-width: 80%;
+    justify-self: center;
+
 }
