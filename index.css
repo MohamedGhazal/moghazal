@@ -62,7 +62,7 @@ html, body{
     
 
 
-    background-image: url("resources/banner.jpg");
+    background-image: url("resources/banner/banner.jpg");
     background-position: center;
     background-size: cover;
     min-height: 500px;
@@ -95,13 +95,13 @@ html, body{
 
 }
 
-.about{
+.intro{
     text-align: start;
     display: flex;
 
 }
 
-.aboutMeText{
+.introText{
     margin: 50px;
 
     color: white;
@@ -109,19 +109,21 @@ html, body{
 }
 
 
-.aboutMeText h2{
+.introText h2{
     font-weight: 300;
 }
-.aboutMeText p{
+.introText p{
     font-weight: 200;
+    font-size: 1rem;
+    color: rgb(172, 172, 172)
 }
 
 
-.aboutMePic{
+.introPic{
     padding-right: 0px;
 }
 
-#aboutMePic{
+#introPic{
     height: 100%;
     width: 100%;
     align-self: center;
@@ -137,4 +139,11 @@ html, body{
     max-width: 80%;
     justify-self: center;
 
+}
+
+#driver-pcb {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
 }
