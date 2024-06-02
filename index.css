@@ -5,6 +5,7 @@
 html, body{
     background-color: rgb(20, 20, 20);
     margin: 0px;
+    border: 0px;
 }
 
 .navbar {
@@ -21,11 +22,8 @@ html, body{
     margin-right: 5%;
     background: rgba(0,0, 0, 80%);
     align-items: baseline;
-
     z-index: 5;
-
 }
-
 
 .navbar a{
     color: white;
@@ -33,6 +31,7 @@ html, body{
     font-size: large;
     font-weight: 300;
 }
+
 .logo{
     color: rgb(255, 255, 255);
     font-size: larger;
@@ -59,9 +58,6 @@ html, body{
     grid-template-columns: repeat(4, 25%);
     align-items: center;
     justify-content: space-evenly;
-    
-
-
     background-image: url("resources/banner/banner.jpg");
     background-position: center;
     background-size: cover;
@@ -69,14 +65,11 @@ html, body{
 }
 
 .banner-text{
-
     grid-area: 2 / 2 / 2 / 4;
     color: white;
     text-align: center;
-
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-
 }
 
 .banner-text h1 {
@@ -98,12 +91,10 @@ html, body{
 .intro{
     text-align: start;
     display: flex;
-
 }
 
 .introText{
     margin: 50px;
-
     color: white;
     min-width: 50%;
 }
@@ -112,6 +103,7 @@ html, body{
 .introText h2{
     font-weight: 300;
 }
+
 .introText p{
     font-weight: 200;
     font-size: 1rem;
@@ -121,6 +113,12 @@ html, body{
 
 .introPic{
     padding-right: 0px;
+}
+
+.main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 #introPic{
