@@ -31,6 +31,13 @@ html, body{
     padding: 20px;
     font-size: large;
     font-weight: 300;
+    transition: font-weight 0.2s;
+
+    transition-timing-function: ease-in-out;
+}
+
+.navbar a:hover{
+    font-weight: 600;
 }
 
 .logo{
