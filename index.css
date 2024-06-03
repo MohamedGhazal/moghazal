@@ -23,6 +23,7 @@ html, body{
     background: rgba(0,0, 0, 80%);
     align-items: baseline;
     z-index: 5;
+
 }
 
 .navbar a{
@@ -59,6 +60,7 @@ html, body{
     align-items: center;
     justify-content: space-evenly;
     background-image: url("resources/banner/banner.jpg");
+ 
     background-position: center;
     background-size: cover;
     min-height: 500px;
@@ -95,9 +97,11 @@ html, body{
 
 .introText{
     margin: 50px;
+
     color: white;
     min-width: 50%;
 }
+
 
 
 .introText h2{
@@ -112,6 +116,7 @@ html, body{
 
 
 .introPic{
+
     padding-right: 0px;
 }
 
@@ -144,4 +149,5 @@ html, body{
     width: 100%;
     align-self: center;
     object-fit: cover;
+
 }
